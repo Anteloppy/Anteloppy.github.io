@@ -1,0 +1,18 @@
+.menu {
+	display: flex;
+	justify-content: center;
+	background-color: grey;
+}
+.a {
+	padding: 1px;
+	padding-top: 0px;
+}
+.table {
+	border-collapse: collapse;
+	border: 0;
+	margin: 0 auto;
+}
+.td {
+	border: 2px solid transparent;
+	padding: 10px;
+}
