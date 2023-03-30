@@ -1,4 +1,4 @@
-#header {
+.header {
 	display: flex;
 	justify-content: center;
 	height: 7%;
@@ -8,20 +8,14 @@
 	margin-top: -11px;
 	transition: transform 0.3s ease-out;
 }
-#iframe {
+.iframe {
 	margin-top: 0px;
 	padding-top: 0px;
 	padding-bottom: 5px;
 	width: 100%;
 	margin-top: 0px;
 }
-@media only screen and (max-width: 1000px){
-  #header { height: 45px; }
-}
-@media only screen and (min-width: 1000px) and (max-width: 8000px) {
-  #header { height: 83px; }
-}
-#container {
+.container {
 	display: flex;
 	justify-content: center;
 	width: 95%;
@@ -30,9 +24,43 @@
 	background-color: lime;
 	margin-bottom: 3px;
 }
-#content {
+.content {
 	align-items: top;
 }
+
+.content-bottom {
+	align-items: bottom;
+	margin-bottom: 3px;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	width: 95%;
+	height: 5%;
+	background-color: lightgray;
+	margin: 0 auto;
+}
+
+@media only screen and (max-width: 1000px){
+  #ava_1 { visibility: visible; }
+  #ava_2 { width: 0px; height: 0px; }
+  #ava_3 { width: 0px; height: 0px; }
+}
+@media only screen and (min-width: 1001px) and (max-width: 1200px){
+  #ava_1 { width: 0px; height: 0px; }
+  #ava_2 { visibility: visible; }
+  #ava_3 { width: 0px; height: 0px; }
+}
+@media only screen and (min-width: 1201px) and (max-width: 8000px) {
+  .header { height: 83px; }
+  #ava_1 { width: 0px; height: 0px; }
+  #ava_2 { width: 0px; height: 0px; }
+  #ava_3 { visibility: visible; }
+}
+
+@media only screen and (max-width: 1000px) { .header { height: 45px; } }
+@media only screen and (min-width: 1000px) and (max-width: 8000px) { .header { height: 83px; } }
 
 /*
 @media only screen and (min-width: 500px) {

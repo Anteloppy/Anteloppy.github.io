@@ -1,0 +1,82 @@
+.header {
+	display: flex;
+	justify-content: center;
+	height: 7%;
+	margin: auto;
+	text-align: center;
+	overflow-y:  hidden;
+	margin-top: -11px;
+	transition: transform 0.3s ease-out;
+}
+.iframe {
+	margin-top: 0px;
+	padding-top: 0px;
+	padding-bottom: 5px;
+	width: 100%;
+	margin-top: 0px;
+}
+@media only screen and (max-width: 1000px){
+  .header { height: 45px; }
+}
+@media only screen and (min-width: 1000px) and (max-width: 8000px) {
+  .header { height: 83px; }
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	position: relative;
+	padding-top: -15px;
+}
+   
+.gallery img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+   
+.gallery img:hover {
+    border: 2px solid #000;
+    cursor: pointer;
+}
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 95%;
+	height: auto;
+	margin: auto;
+	background-color: lime;
+	padding-bottom: 15px;
+}
+.content {
+	
+	align-items: top;
+}
+
+P {
+	text-align: center;
+	font-family: comfortaa;
+	margin-bottom: -15px;
+}
+
+.modal {
+  display: none; /* модальное окно по умолчанию не отображается */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9); /* задаем цвет фона для окна */
+}
+
+.modal img {
+  margin: auto;
+  display: block;
+  width: auto;
+  max-height: 100%;
+}

@@ -5,10 +5,22 @@
 	</head>
 	<body>
 		<nav id="menu">
-			<a class="a" href="home.html"><img id="img-1s" src="img/121.35x37.5.png" alt="Главная"><img id="img-1l" src="img/242.7x75.png" alt="Главная"></a>
-			<a class="a" href="galery.html"><img id="img-2s" src="img/121.35x37.5.png" alt="Галерея"><img id="img-2l" src="img/242.7x75.png" alt="Галерея"></a>
-			<a class="a" href="about.html"><img id="img-3s" src="img/121.35x37.5.png" alt="Обо мне"><img id="img-3l" src="img/242.7x75.png"alt="Обо мне"></a>
-			<a class="a" href="setting.html"><img id="img-4s" src="img/121.35x37.5.png" alt="Сеттинг"><img id="img-4l" src="img/242.7x75.png" alt="Сеттинг"></a>
+			<a class="a" href="home.html"><img id="img-1s" src="img/121.35x37.5.png" alt="Главная" onclick="window.location.href='home.html'"><img id="img-1l" src="img/242.7x75.png" alt="Главная" onclick="window.location.href='home.html'"></a>
+			<a class="a" href="gallery.html"><img id="img-2s" src="img/121.35x37.5.png" alt="Галерея" onclick="window.location.href='gallery.html'"><img id="img-2l" src="img/242.7x75.png" alt="Галерея" onclick="window.location.href='gallery.html'"></a>
+			<a class="a" href="about.html"><img id="img-3s" src="img/121.35x37.5.png" alt="Обо мне" onclick="window.location.href='about.html'"><img id="img-3l" src="img/242.7x75.png"alt="Обо мне" onclick="window.location.href='about.html'"></a>
+			<a class="a" href="setting.html"><img id="img-4s" src="img/121.35x37.5.png" alt="Сеттинг" onclick="window.location.href='setting.html'"><img id="img-4l" src="img/242.7x75.png" alt="Сеттинг" onclick="window.location.href='setting.html'"></a>
 		</nav>
+		<script>
+   window.addEventListener('load', function() {
+     var images = document.getElementsByTagName('img');
+     for (var i = 0; i < images.length; i++) {
+       var image = images[i];
+       image.onclick = function(event) {
+         var pageUrl = event.target.parentNode.href || event.target.parentNode.parentNode.href;
+         window.parent.location.href = pageUrl;
+       };
+     }
+   });
+   </script>
 	</body>
 </html>
